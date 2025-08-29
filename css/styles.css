@@ -1,0 +1,60 @@
+/* create a 4x2 grid setup for the image, the heart icon and the more link */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+li {
+    list-style: none;
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.destination-item {
+    /* create grid for 4x2 */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 30px;
+    max-width: 400px;
+    height: 350px;
+    margin: auto;
+    background-color: #CFF9FF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* get items stacked side by side */
+
+.destination-item img {
+    grid-column: 1 / span 2;
+    contain: content;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.destination-info a h2 {
+    grid-column: 1 / span 2;
+    justify-self: right;
+    margin-left: 280px;
+    margin-top: -20px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+}
+
+.destination-info .favourite img {
+    justify-self: end;
+    width: 15px;
+    margin-left: 25px;
+    font-size: 24px;
+    color: #e74c3c;
+    cursor: pointer;
+}
