@@ -9,12 +9,16 @@ fetch(dataId)
     .then(response => response.json())
     .then(data => {
         showData(data);
-        
+
     });
 
-    function showData(data) {
-       const content = `<h2>${data.title}</h2>`
-         + `<img src="img/${data.image}" alt="${data.title}">`
+function showData(data) {
+    const content = /* html*/ `
+       <h2>${data.title}</h2>`
+        + `<img src="img/${data.image}" class="main-image" alt="${data.title}">`
+        + `<p>${data.subtitle}</p>`
+        + `<h3>Facilities</h3><ul>${data.facilities.map(facility =>
+            `<li>${facility}</li>`).join('')}</ul>`;
 
-       mainWrapper.insertAdjacentHTML('beforeend', content);
-    }
+    mainWrapper.insertAdjacentHTML('beforeend', content);
+}

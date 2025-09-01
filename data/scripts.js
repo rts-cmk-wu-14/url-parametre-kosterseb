@@ -33,7 +33,6 @@ fetch(json)
                 } else {
                     favIcon.src = 'img/image.png';
                 }
-
                 localStorage.setItem(destination.destination, favIcon.src);
                 
             });
