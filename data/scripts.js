@@ -20,7 +20,7 @@ fetch(json)
             
             infoDiv.innerHTML = `
             <a href="#" class="favourite"><img src="img/image.png" alt="icon"></a>
-            <a href="#" class="more-link"><h2>MORE</h2></a>
+            <a href="detaljer.html?id=${destination.id}" class="more-link"><h2>MORE</h2> </a>
             `;
             
             // Add event listener for the favourite link
@@ -33,6 +33,8 @@ fetch(json)
                 } else {
                     favIcon.src = 'img/image.png';
                 }
+
+                localStorage.setItem(destination.destination, favIcon.src);
                 
             });
             
