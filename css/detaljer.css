@@ -111,7 +111,7 @@ body {
 .filler-text {
     margin-bottom: 40px;
     color: #2f565c;
-    width: 450px;
+    width: 610px;
     padding: 10px 10px;
     font-style: italic;
     background-color: rgba(207, 249, 255, 0.74);
@@ -157,6 +157,7 @@ body {
         transform: translateX(100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
@@ -168,6 +169,7 @@ body {
         transform: translateX(0);
         opacity: 1;
     }
+
     to {
         transform: translateX(100%);
         opacity: 0;
@@ -180,7 +182,7 @@ h3 {
     margin-top: 25px;
     margin-bottom: 15px;
     font-size: 1.5em;
-    background-color: rgba(207, 249, 255, 0.588);
+    background-color: rgba(207, 249, 255, 0.723);
     padding: 10px 10px;
     border-left: 4px solid #CFF9FF;
     width: fit-content;
@@ -209,29 +211,30 @@ li:hover {
 
 /* Responsive design */
 @media (max-width: 768px) {
+
     .detail-header {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
     }
-    
+
     .favourite-detail {
         align-self: flex-end;
     }
-    
+
     .content-container {
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .image-section {
         flex: none;
     }
-    
+
     .main-image {
         height: 300px;
     }
-    
+
     .feedback-message {
         right: 10px;
         left: 10px;
