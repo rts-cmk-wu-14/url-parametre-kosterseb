@@ -23,6 +23,7 @@ fetch(json)
             const heartIcon = isFavorited ? 'imagered.png' : 'image.png';
             
             infoDiv.innerHTML = `
+            <h2 class="destination-name">${destination.destination}</h2>
             <a href="#" class="favourite"><img src="img/${heartIcon}" alt="favorite icon"></a>
             <a href="detaljer.html?id=${destination.id}" class="more-link"><h2>MORE</h2></a>
             `;

@@ -31,7 +31,7 @@ function showData(data) {
                 <img src="img/${data.image}" class="main-image" alt="${data.title}">
             </div>
             <div class="text-section">
-                <p class="filler-text">${data.subtitle.charAt(0).toUpperCase() + data.subtitle.slice(1) + '.'}</p>
+                <p class="subtitle-text">${data.subtitle.charAt(0).toUpperCase() + data.subtitle.slice(1) + '.'}</p>
                 <p class="filler-text">${data.text}</p>
                 <h3>Facilities</h3>
                 <ul class="facility-list">${data.facilities.map(facility => `<li>${facility}</li>`).join('')}</ul>

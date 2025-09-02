@@ -1,17 +1,29 @@
 /* Smooth 4x2 grid setup for destinations */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "TASA Explorer", sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url(https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?_gl=1*zm6y00*_ga*OTg4MTI0MDgxLjE3NTY3OTcwMzc.*_ga_8JE65Q40S6*czE3NTY3OTcwMzYkbzEkZzEkdDE3NTY3OTgyMDgkajI2JGwwJGgw);
+    background-size: cover;
+    background-attachment: fixed;
     background-color: #f4f4f4;
 }
 
 .headline {
+    position: relative;
+    top: 15px;
+    left: 32%;
     text-align: center;
     margin: 30px 0 10px 0;
+    padding: 30px 20px;
+    margin-bottom: 50px;
     font-size: 2.5em;
     color: #333;
     font-weight: 700;
+    background-color: rgba(127, 238, 255, 0.422);
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* Container for the destinations list */
@@ -19,8 +31,8 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-    max-width: 1200px;
+    gap: 25px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -34,6 +46,14 @@ a {
     text-decoration: none;
     color: #000000;
     transition: all 0.3s ease;
+}
+
+.destination-name {
+    font-size: 1em;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    padding-left: 10px;
 }
 
 .destination-item {
@@ -172,7 +192,7 @@ a {
 }
 
 .feedback-message.info {
-    background-color: rgba(52, 152, 219, 0.9);
+    background-color: rgba(219, 52, 52, 0.9);
     color: white;
 }
 
